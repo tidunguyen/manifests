@@ -4,4 +4,6 @@ metadata:
   name: istio-ingressgateway
   namespace: istio-system
 spec:
-  type: NodePort
+  type: LoadBalancer
+  externalIPs:
+    - "10.0.1.1"
