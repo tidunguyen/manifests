@@ -24,6 +24,9 @@ resources:
 # Kubeflow Istio Resources
 - ../common/istio-1-9/kubeflow-istio-resources/base
 
+# TiDu Web App
+- ../contrib/tidu/base
+
 
 # Kubeflow Pipelines
 - ../apps/pipeline/upstream/env/platform-agnostic-multi-user

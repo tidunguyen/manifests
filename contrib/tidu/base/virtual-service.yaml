@@ -1,0 +1,21 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: tidu-kf-webapp
+  namespace: kubeflow
+spec:
+  gateways:
+  - kubeflow-gateway
+  hosts:
+  - '*'
+  http:
+  - match:
+    - uri:
+        prefix: /tidu/
+    rewrite:
+      uri: /
+    route:
+    - destination:
+        host: tidu-kf-webapp.kubeflow.svc.cluster.local
+        port:
+          number: 80
