@@ -5,7 +5,7 @@ metadata:
   name: dex
 data:
   config.yaml: |
-    issuer: http://10.0.1.1.nip.io/dex
+    issuer: http://192.168.1.155.nip.io:11111/dex
     storage:
       type: kubernetes
       config:
@@ -24,9 +24,9 @@ data:
         id: github
         name: GitHub
         config:
-          clientID: 3b6a17515f1970d7cb50
-          clientSecret: b1528d5f11f4891ac3e91e69d2f4da9cc3281014
-          redirectURI: http://10.0.1.1.nip.io/dex/callback
+          clientID: 24f5169896f551edc101
+          clientSecret: f0559fee88d11a1be36217dd47cb88b1e74c35bc
+          redirectURI: http://192.168.1.155.nip.io:11111/dex/callback
           useLoginAsID: false
       - type: google
         id: google
@@ -34,7 +34,8 @@ data:
         config:
           clientID: 98134702542-k8n7mdo7fgdhfeeemp0nftj94qdjvlfq.apps.googleusercontent.com
           clientSecret: M3f02o0q9ERS64kQqzJw-mTZ
-          redirectURI: http://10.0.1.1.nip.io/dex/callback
+          redirectURI: http://192.168.1.155.nip.io:11111/dex/callback
+          useLoginAsID: false
     staticPasswords:
     - email: tidu@aol.com
       hash: $2a$10$Q8U8ygJQGQNgkfi.H1BBDuVHENV5YMgGyj144T3ygUyoOAO/bXT7W

@@ -5,5 +5,5 @@ metadata:
   namespace: istio-system
 spec:
   type: LoadBalancer
-  externalIPs:
-    - "10.0.1.1"
+  # externalIPs:
+  #   - "10.0.1.1"
