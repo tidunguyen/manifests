@@ -37,9 +37,9 @@ data:
           redirectURI: http://192.168.1.155.nip.io:11111/dex/callback
           useLoginAsID: false
     staticPasswords:
-    - email: tidu@aol.com
+    - email: tidunguyen@aol.com
       hash: $2a$10$Q8U8ygJQGQNgkfi.H1BBDuVHENV5YMgGyj144T3ygUyoOAO/bXT7W
-      username: tidu
+      username: tidunguyen
     staticClients:
     - id: kubeflow-oidc-authservice
       redirectURIs: ["/login/oidc"]
